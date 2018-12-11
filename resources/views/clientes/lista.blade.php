@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Logado</div>
+                <div class="card-header">
+                Clientes
+                <a class ="float-right" href="{{url('clientes/novo')}}">Novo Cliente</a>
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +17,7 @@
                         </div>
                     @endif
 
-                    Ocê está logado uai!    
+                Listagemd de Clientes
                 </div>
             </div>
         </div>

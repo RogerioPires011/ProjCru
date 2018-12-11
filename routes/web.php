@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(); 
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/welcome', 'HomeController@index')->name('home');
+
+Route::get('/home', 'HomeController@logado')->name('home');
+
+
+Route::get('/lista', 'ClientesController@index')->name('home');
+Route::get('clientes/novo', 'ClientesController@novo');

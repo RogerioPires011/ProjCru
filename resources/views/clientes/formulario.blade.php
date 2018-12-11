@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Logado</div>
+                <div class="card-header">
+               Informe abaixo as informações do Cliente
+                <a class ="float-right" href="{{url('lista')}}">Listagem de Cliente</a>
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +17,7 @@
                         </div>
                     @endif
 
-                    Ocê está logado uai!    
+                Formulário
                 </div>
             </div>
         </div>
