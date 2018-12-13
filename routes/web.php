@@ -23,4 +23,5 @@ Route::get('/home', 'HomeController@logado')->name('home');
 
 
 Route::get('/lista', 'ClientesController@index')->name('home');
-Route::get('clientes/novo', 'ClientesController@novo');
+
+route::get('clientes/{cliente}/novo', 'ClientesController@novo');

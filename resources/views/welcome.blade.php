@@ -12,10 +12,10 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background: -webkit-gradient(linear, left top, left bottom, from(black), to(#383d41));
+                color: white;
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
+                font-weight: 900;
                 height: 100vh;
                 margin: 0;
             }
@@ -45,7 +45,8 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 120px;
+                
             }
 
             .links > a {

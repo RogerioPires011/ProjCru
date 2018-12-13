@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background: silver">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/welcome') }}">
                   Página Inicial
@@ -34,8 +34,8 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto"> 
                     @if (!Auth::guest())
-                                <li class="nav-item">
-                                    <a href='lista'>Clientes</a>
+                                <li class="nav-item" >
+                                    <a href='lista' style="color:Black">Clientes</a>
                                 </li>
                     @endif
                     
@@ -78,7 +78,8 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" >
+        
             @yield('content')
         </main>
     </div>
