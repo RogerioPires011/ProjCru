@@ -9,19 +9,18 @@
                 <table class="table">
                            <th class="border-right border-left" >ID</th>
                            <th class="border-right" >NOME</th>
-                           <th class="border-right" >CONSULTAR</th>
+                           <th class="border-right" >IMPORTÂNCIA</th>
                            <tbody>
                            @foreach($clientes as $cliente)
                                <tr>
                                    <td class="border-right border-left border-bottom">{{$cliente->id}}</td>
-                                   <td class="border-bottom">{{$cliente->nome}}</td>
-
-                                   <td class="border-left border-right border-bottom">
-                                       <a href="clientes/{{$cliente->id}}/novo"
-                                          style="color:black">DADOS</a>
+                                   <td class="border-bottom"><a href="clientes/{{$cliente->id}}/novo"
+                                          style="color:black">{{$cliente->nome}}</a>
                                        {!! Form::open(['url'=>'/clientes/'.$cliente->id]) !!}
                                        {!! Form::close() !!}
-                                   </td>
+                                    </td>
+
+                                   
                                </tr>
                            @endforeach
                            </tbody>
